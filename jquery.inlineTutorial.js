@@ -131,19 +131,15 @@ $.widget("ui.inlineTutorial", {
       op.current_step = op.steps[op.current_step_id] ;
    },
    dismiss: function(){
-      $("#inline_tutorial_outer").fadeOut(200, function(){
-            // $(this).hide();
-      });
+      $("#inline_tutorial_outer").fadeOut(200);
    },
    restart: function(){
-		this_id = this; 
+		self = this; 
 		var op = this.options;
 	   $("#inline_tutorial_outer").fadeOut(200, function(){
 	     op.current_step_id = 0;
 	     op.current_step = op.steps[op.current_step_id] ;
-	     this_id.setup_step();
-			 $("#help_button").removeClass('helpon');
-			 window.help_show = false;
+	     self.setup_step();
      });
    },
    overlay:function(){
