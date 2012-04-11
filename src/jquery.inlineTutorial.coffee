@@ -15,7 +15,10 @@ $.widget "ui.inlineTutorial",
 
     $("#inline_tutorial_box .controls .tutorial_previous").live "click", ->
       self.previous_step()
-    
+
+    $("#inline_tutorial_box .controls .tutorial_close").live "click", ->
+      self.dismiss()
+      
     $(@element).append "<div id='inline_tutorial_outer'></div>"
 
   _constructContainer: ->
