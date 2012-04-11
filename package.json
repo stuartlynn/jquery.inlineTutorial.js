@@ -1,0 +1,18 @@
+{
+  "name": "jquery.inlineTutorial",
+  "version": "0.0.1",
+  "description": "For creating inline tutorials",
+  "keywords": ["jquery", "inline tutorial", "shazaam"],
+  "homepage": "https://www.zooniverse.org/",
+  "author": {
+    "name": "Stuart Lynn",
+    "email": "stuart@zooniverse.org",
+    "url": "https://www.zooniverse.org/"
+  },
+  "files": ["lib/jquery.inlineTutorial.js"],
+  "main": "lib/jquery.inlineTutorial.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:stuartlynn/jquery.inlineTutorial.js.git"
+  },
+}
